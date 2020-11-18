@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL"/>
+		<setting name="callSettersOnNulls" value="false"/>
+	</settings>
+	<typeAliases>
+		<typeAlias type="kr.or.erp.dto.CodeDepartmentDto" alias="CodeDepartmentDto"/>
+		<typeAlias type="kr.or.erp.dto.CodeSchoolDto" alias="CodeSchoolDto"/>
+		<typeAlias type="kr.or.erp.dto.CodeSkillDto" alias="CodeSkillDto"/>
+		<typeAlias type="kr.or.erp.dto.FormInsert" alias="FormInsert"/>
+		<typeAlias type="kr.or.erp.dto.FormSearch" alias="FormSearch"/>
+		<typeAlias type="kr.or.erp.dto.Pagination" alias="Pagination"/>
+		<typeAlias type="kr.or.erp.dto.StaffDto" alias="StaffDto"/>
+		<typeAlias type="kr.or.erp.dto.StaffSkillDto" alias="StaffSkillDto"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/*.xml"/>
+	</mappers>
+</configuration>
